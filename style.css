@@ -1,199 +1,227 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-*{
-      font-family: "Montserrat", sans-serif;
+* {
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: #E8F0FE;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
-body{
- background-color: #F0F4F9;
- display: flex;
- height: 100vh;
- align-items: center;
- justify-content: center;
+.main-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.container{
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
-   
-}
-.white-container{
-    height: 400px;
+
+.form-box {
+    height: 450px;
     width: 70%;
     display: flex;
-    border-radius: 20px;
-    background-color: white;
-    padding: 0 15px 0 15px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-#left{
+
+.left-box {
     width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-left: 40px;
 }
-h1{
-    padding-top: 20px;
-        font-size: 36px;
-    font-weight: 500;
+
+.logo-box {
+    margin-bottom: 15px;
 }
-h6{
-    padding-top: 20px;
-    font-weight: 500;
-    font-size: 17px;
+
+.title-text {
+    padding-top: 10px;
+    font-size: 34px;
+    font-weight: 600;
+    color: #0B57D0;
 }
-#right{
+
+.small-text {
+    padding-top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #5f6368;
+}
+
+.right-box {
     height: 100%;
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 80px;
-}
-input{
-    margin: 16px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    outline: none;
-    border: 1px solid rgb(144, 141, 141);
-}
-input::placeholder{
-    font-size: 16px;
-    text-align: left;
-    font-weight: 500;
+    padding-top: 50px;
+    padding-left: 20px;
 }
 
-#btn{
-    display: flex;
-    justify-content: end;
-    padding: 10px 20px;
+.text-input {
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #b0b0b0;
+    font-size: 16px;
 }
-#btn>button{
-    padding: 10px 19px;
-    border-radius: 30px;
-    border: 0;
+
+.text-input::placeholder {
+    font-weight: 500;
+    color: #7a7a7a;
+}
+
+.button-box {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.next-btn {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
     font-size: 15px;
     font-weight: 500;
     background-color: #0B57D0;
     color: white;
-    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.last-part{
+
+.next-btn:hover {
+    background-color: #084bb5;
+}
+
+.bottom-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-width: 70%; 
-  margin-top: 20px;
-}
-.last-part ul {
-    display: flex;
-}
-.last-part ul>li{
-    list-style: none;
-    padding-left: 10px;
-    font-size: 15px;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 14px;
+    gap: 10px;
 }
 
-#drop-down select{
+.language-box select {
     border: none;
     outline: none;
     background-color: transparent;
-    appearance: none;
-
+    font-size: 14px;
+    cursor: pointer;
 }
 
-@media (max-width: 992px){
-  .white-container{
-    width: 70%;
-    height: auto;
-    flex-direction: column;
-    padding: 30px 20px;
-  }
-  #left, #right{
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
-  #right{
-    padding-top: 40px;
-  }
-  h1{
-    font-size: 28px;
-  }
-  h6{
-    font-size: 16px;
-  }
-  input{
-    margin: 10px 0;
-    padding: 12px 15px;
-    width: 100%;
-  }
-  #btn{
-    justify-content: flex-end;
-  }
-  #btn>button{
-    width: auto;
-    margin-top: 20px;
-    padding: 8px 20px;
-  }
-  .last-part{
-    width: 65%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-  }
+.links-box ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
 }
 
-@media (max-width: 600px){
-    /* body{
-        background-color: white;
-    } */
-     .white-container{
-        width: 100%;
-        height: 100vh;
-        display: flex;
+.links-box ul li {
+    cursor: pointer;
+    color: #5f6368;
+    font-size: 15px;
+}
+
+.links-box ul li:hover {
+    text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .form-box {
+        width: 80%;
+        height: auto;
         flex-direction: column;
-     }
-     #left,
-  #right {
-    width: 100%;
-    padding: 0;
-  }
-    .container{
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    background-color: white;
-}
-#right{
-    padding-top: 10px;
-    height: auto;
-    margin-left: 0;
-}
-#left {
-    padding-top: 30px;
-    height: auto;
-  }
+        padding: 25px 20px;
+    }
 
-  input{
-    margin: 10px 0;
-    border-radius: 0;
-  }
-  h6{
-    padding: 20px 0;
-  }
-  .last-part{
-    display: flex;
-    width: 100%;
-    padding: 30px 10px;
-  }
+    .left-box,
+    .right-box {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
 
+    .right-box {
+        padding-top: 25px;
+    }
+
+    .title-text {
+        font-size: 28px;
+    }
+
+    .small-text {
+        font-size: 15px;
+    }
+
+    .text-input {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .next-btn {
+        width: auto;
+        padding: 8px 20px;
+    }
+
+    .bottom-box {
+        width: 80%;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .form-box {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-box {
+        padding-top: 15px;
+    }
+
+    .text-input {
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    .title-text {
+        font-size: 24px;
+    }
+
+    .small-text {
+        font-size: 14px;
+    }
+
+    .bottom-box {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px 10px;
+    }
 }
